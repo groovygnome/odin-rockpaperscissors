@@ -30,20 +30,6 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-function playGame() {
-    for (let i = 0; i < 5; i++) {
-        const human = getComputerChoice()
-        const cpu = getHumanChoice();
-
-        playRound(human, cpu);
-    }
-    if (humanScore > computerScore) {
-        console.log("You won the game!");
-    } else if (computerScore > humanScore) {
-        console.log("You lost the game.");
-    } else {
-        console.log("You tied!");
-    }
-}
-
-playGame();
+let rockBtn = document.querySelector("#rock");
+let paperBtn = document.querySelector("#rock");
+let scissorsBtn = document.querySelector("#rock");
